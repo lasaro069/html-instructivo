@@ -51,6 +51,7 @@
     <h3>&lt; <b>blockquote</b> &gt; Bloque de "cita" &lt; / <b>blockquote</b> &gt;</h3> 
     <h3>&lt; <b>canvas</b> &gt; Dbujo de Canvas &lt; / <b>canvas</b> &gt;</h3> 
     <h3>&lt; <b>div</b> &gt; División de Documento &lt; / <b>div</b> &gt;</h3> 
+    <h3>&lt; <b>dl</b> &gt; Listas de Definición (diccionario) lleva en su interior   &lt; dt &gt; para el término a definir y  &lt; dd &gt; la definición del término &lt; / <b>dl</b> &gt;</h3> 
     <h3>&lt; <b>fieldset</b> &gt; Etiqueta de conjunto de campos &lt; / <b>fieldset</b> &gt;</h3> 
     <h3>&lt; <b>figcaption</b> &gt; leyenda de figura &lt; / <b>figcaption</b> &gt;</h3> 
     <h3>&lt; <b>figure</b> &gt; Grupos contenido multimedia con una leyenda &lt; / <b>figure</b> &gt;</h3> 
@@ -130,6 +131,112 @@
 
     <p>Ejemplo:</p>
     <a href="#bloque">Elementos de Bloque</a>
+
+    <h2>Ejemplo de Lista de Definición</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HiperText markup Language: es un lenguaje de marcado que se usa para estructurar datos en una página web</dd>
+      <dt>CSS</dt>
+      <dd>Cascade Style Sheets: Hoja de estilos en cascada. Se utiliza para dar estilos al html</dd>
+      <dt></dt>
+      <dd></dd>
+    </dl>
+
+    <h2>Ejemplo Listas Desordenadas</h2>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <h2>Tablas</h2>
+    <p>Utiliza 3 etiquetas:</p>
+    <ul>
+      <li>     <h3>&lt; <b>table </b> &gt; Etiqueta que encierra la tabla  &lt; / <b> table</b> &gt;</h3> 
+      </li>
+      <li>    <h3>&lt; <b>tr </b> &gt; <i>table row</i>:  etiqueta que construye una fila  &lt; / <b> </b> &gt;</h3> 
+      </li>
+      <li>    <h3>&lt; <b> td</b> &gt; <i>table data</i>: etiqueta que construye una celda  &lt; / <b> </b> &gt;</h3> 
+      </li>
+      <li>    <h3>&lt; <b> th</b> &gt; <i></i> Se utiliza para crear las celdas de cabecera de la tabla  &lt; / <b> </b> &gt;</h3> 
+      </li>
+    </ul>
+    <p>El número de celdas dentro de un 'tr' establecerá el número de columnas de la tabla.</p>
+
+    <table>
+      <caption>Horario de Clases</caption>  <!-- esta etiqueta se usa para poner título a la tabla -->     
+      <thead>
+        <tr>
+          <th>hora</th>
+          <th>lunes</th>
+          <th>martes</th>
+          <th>miércoles</th>
+          <th>jeuves</th>
+          <th>viernes</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>08:30</td>
+          <td>matematica</td>
+          <td>ingles</td>
+          <td>sociales</td>
+          <td>dibujo</td>
+          <td rowspan="2">quimica</td>
+        </tr>
+        <tr>
+          <td>09:30</td>
+          <td>matematica</td>
+          <td>ingles</td>
+          <td>sociales</td>
+          <td>dibujo</td>
+        </tr>
+        <tr>
+          <td>10:30</td>
+          <td colspan="5">recreo</td>
+        </tr>
+        <tr>
+          <td>11:30</td>
+          <td rowspan="2">matematica</td>
+          <td>ingles</td>
+          <td>sociales</td>
+          <td>dibujo</td>
+          <td>quimica</td>
+        </tr>
+        <tr>
+          <td>12:30</td>
+          <td>ingles</td>
+          <td>sociales</td>
+          <td>dibujo</td>
+          <td>quimica</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Total de Asignaturas</td>
+          <td>12</td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+
+        <tr>
+          <td>08:30</td>
+          <td>matematica</td>
+          <td>ingles</td>
+          <td>sociales</td>
+          <td>dibujo</td>
+          <td>quimica</td>
+        </tr>
+
+        <pre>
+          <code>
+            <main></main>
+          </code>
+        </pre>
+
 
 
 
