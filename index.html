@@ -41,7 +41,7 @@
 
     <p>Los &lt; <b>articles</b> &gt; necesitan un &lt; <b>header</b> &gt; es decir, como los &lt; <b>article</b> &gt; son contenido independiente pueden tener su propio &lt; <b>header</b> &gt; y su propio &lt; <b>footer</b> &gt;</p>
 <br>
-    <h2>Elementos de Bloque</h2>
+    <h2 id="bloque">Elementos de Bloque</h2>
 
     <p>Son aquellas etiquetas que ocupan el ancho total de la pantalla, desplazando cualquier etiqueta debajo de ella</p>
 
@@ -89,22 +89,47 @@
     <h3>&lt; <b>strong </b> &gt; hace énfasis <strong>más fuerte </strong>  &lt; / <b> strong</b> &gt;</h3> 
     <h3>&lt; <b>small </b> &gt; hace <small>menos énfasis</small> al texto  &lt; / <b> small</b> &gt;</h3> 
     <h3>&lt; <b>br </b> &gt; Forza un salto de línea  &lt; / <b>br </b> &gt;</h3> 
-    <h3>&lt; <b> wbr</b> &gt; salto de línea, solo si hace falta  &lt; / <b>wbr </b> &gt;</h3> 
+    <h3>&lt; <b> wbr</b> &gt; salto de línea, solo si hace falta 
     <h3>&lt; <b>time </b> &gt; Para representar contenido de hora/fecha  &lt; / <b> time</b> &gt;</h3> 
     <h3>&lt; <b> i</b> &gt; <i>Texto en itálica</i>  &lt; / <b>i </b> &gt;</h3> 
     <h3>&lt; <b>b </b> &gt; texto en <b>negrita</b>  &lt; / <b>b </b> &gt;</h3> 
     <h3>&lt; <b> u</b> &gt; Texto <u>subrayado</u>  &lt; / <b>u </b> &gt;</h3>
+    <h3>&lt; <b> sup</b> &gt;  superindice 4 <sup>2</sup> &lt; / <b> sup</b> &gt;</h3> 
+
+    <h3>&lt; <b> sub</b> &gt; subindice h <sub>2</sub>0  &lt; / <b>sub </b> &gt;</h3> 
 
 
-    
-<address></address>
 
-    
+    <h3>&lt; <b> </b> &gt;   &lt; / <b> </b> &gt;</h3> 
+
+    <h2>Etiquetas de Enalce</h2>
+
+    <h3>Rutas absolutas:</h3>
+    <p>Tiene un protocolo <i>http</i> o <i>https</i> y son únicas en la red.</p>
+    <p>Se suelen utilizar para rutas externas.</p>
+
+    <h3>Rutas relativas:</h3>
+    <p>Pueden ser relativas al punto donde nos escontramos o relativas a la raíz del proyecto.</p>
+    <p>No usan protocolo de internet</p>
+    <p>Si el recutso se encuentra al mismo nivel, es decir, en la misma carpeta, pondremos ul nombre del archivo y la extensión</p>
+    <p>Si necesitamos salir de la carpeta actual, usaremos ../ por cada nivel que queremos subir</p>
 
 
-    <h3>&lt;  &gt;</h3>
-    <p> </p>
 
+    <h3>&lt; <b>a href="./dirección o ruta" </b> &gt; no s crea un enlace a la dirección o ruta especificada en la etiqueta  &lt; / <b> </b> &gt;</h3> 
+
+    <h3>&lt; <b>a href="" target="_blank"</b> &gt; Se utiliza en rutas absolutas. abre la ventana en una nueva ventana, sin cerrar la actual  &lt; / <b> </b> &gt;</h3> 
+
+    <h3>&lt; <b>a href="" download </b> &gt; Se utiliza para descargar el recurso seleccionado. Solo se descargan los archivos locales  &lt; / <b> </b> &gt;</h3> 
+
+
+    <h2>Navegación dentro de la página</h2>
+    <p>Se hace a través de 'id' dentro de la etiqueta donde se quiera hacer ancla</p>
+
+    <h3>&lt; <b>a href="#Id_etiqueta" </b> &gt; Me permite navegar dentro de elementos destacados del documento &lt; / <b> </b> &gt;</h3> 
+
+    <p>Ejemplo:</p>
+    <a href="#bloque">Elementos de Bloque</a>
 
 
 
