@@ -1,0 +1,50 @@
+header{
+    background: yellow;
+    height: 280px
+    
+}
+
+.contenedor-header{
+    background: gray;
+    border: 2px solid green;
+    height: 260px;
+}
+
+img{
+    border: 2px solid red;
+    position:absolute;
+    left: 0;
+}
+
+nav{
+    border: 2px solid blue;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+nav li{
+    display: inline;    /* Dispone los elementos de la lista en unsa lola linea*/
+}
+
+.div-principal{
+    border: 2px solid red;
+    height: 200px;
+    position:relative
+}
+
+.div1{
+    border: 2px solid blue;
+    position: absolute
+    
+}
+
+.div1{
+    border: 2px solid green;
+    
+}
+
+.div1{
+    border: 2px solid black;
+    
+}
