@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Instructivo para utilizar html básico">
+    <meta name="author" content="Luis Antonio Santos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivos multimedia</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon//android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
+</head>
+<body>
+
+    <h1>Contenido Embebido</h1>
+
+    <h2>Insertar Imagen</h2>
+    <img src="/imagenes/guitarra-pipe-min.jpg" alt="guitarra y música" width="30%" aria-label="Guitarra con notas musicales multicolor en un fondo verde aguamarina">
+
+    <h2>device Pixel Ratio</h2>
+    <p>Es la relación de tamaño de la pantalla disponible para trabajar</p>
+    <p>Para subir imágenes en DPR</p>
+
+    <img srcset="/imagenes/guitarra-pipe-min.jpg,
+    /imagenes/homero-y-bart.jp 2x" alt="guitarra rojo con negro" width="40%">
+
+    <h2>Etiqueta Picture</h2>
+
+    <picture>
+        <source srcset="/imagenes/guitarra-pipe-min.jp">
+        <img src="/imagenes/guitarra-pipe-min.jp" alt="" width="40%">
+    </picture>
+
+    <h2>Etiquetas de Audio</h2>
+
+    <h3>Atributos</h3>
+    <ul>
+        <li>controls</li>
+        <li>muted</li>
+        <li>autoplay</li>
+        <li>loop</li>
+    </ul>
+    <audio src="/audio/Adiós-Amor.mp3" controls></audio>
+
+    <h2>Etiquetas de Video</h2>
+
+    <video src="/video/Adiós-Amor.mp4" controls muted poster="/imagenes/user.png"></video>
+
+
+    
+</body>
+</html>

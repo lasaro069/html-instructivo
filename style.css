@@ -29,22 +29,60 @@ nav li{
 
 .div-principal{
     border: 2px solid red;
-    height: 200px;
-    position:relative
+    height:400px;
+    width: 700px;
+    position:relative;
 }
 
 .div1{
     border: 2px solid blue;
-    position: absolute
-    
+    width: 33%;
+    height: 50px;
+    position: absolute;
+    left: 0;
 }
 
-.div1{
+.div2{
     border: 2px solid green;
-    
+    width: 33%;
+    height: 70px;
+    position: absolute;
+    left: 232px;
+    right: 0;
 }
 
-.div1{
+.div3{
     border: 2px solid black;
-    
+    width: 33%;
+    height: 90px;
+    position: absolute;    
+    right: 0;
+}
+
+.div4{
+    border: 2px solid pink;
+    width: 49%;
+    height: 90px;
+    position: absolute;    
+    left: 0;
+    bottom: 0;
+}.div5{
+    border: 2px solid yellow;
+    width: 49%;
+    height: 90px;
+    position: absolute;    
+    right: 0;
+    bottom: 0;
+}
+
+footer{
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    text-align: center;
+    background: black;
+    color: whitesmoke;
+}
+
+.text-footer{
 }
