@@ -1,0 +1,106 @@
+
+
+.body-form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedor-main-aside {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-form {
+    background-color: antiquewhite;
+    width: 70%;
+    padding-left: 10px;
+}
+
+
+
+
+.aside-form {
+    background-color: lightblue;
+    width: 30%;
+}
+
+h2, h3 {
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(41, 56, 113);
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+
+}
+
+.form-radio, .form-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(41, 56, 113);
+    width: 800px;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+}
+
+.form-fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(41, 56, 113);
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+
+.fieldset {
+    height: 190px;
+    width: 380px;
+    color: white;
+    border-radius: 20px;
+}
+
+.input {
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.boton {
+    background-color: palegreen;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

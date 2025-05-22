@@ -1,358 +1,448 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        h3{
-            font-weight: normal;
-        }
-    </style>
 
-    <title>Formularios</title>
-</head>
-<body>
-
-    <h1>FORMULARIOS</h1>
-
-    <h2>Estructura Básica</h2>
-
-    <p>Se compone de 4 etiquetas:</p>
-
-    <dl>
-        <dt>Etiqueta form </dt>
-        <dd>Etiqueta que encierra todo el formulario</dd>
-        <dt>Etiqueta label</dt>
-        <dd>Sirve para dar nombre al campo a rellenar</dd>
-        <dt>Etiqueta input</dt>
-        <dd>Crea un espacio donde el usuario podrá interactuar</dd>
-        <dt>Etiqueta button</dt>
-        <dd>Crea un botón que permitirá enviar la información del formulario</dd>
-      </dl>
-
-      <h2>Tipos de Atributos para &lt; input type="xxx" &gt;</h2>
-
-      <h3>&lt; input <b> type="button"</b> &gt; Se comporta igual que un <b>&lt; button &gt; </b>, solo que no envía formularios</h3> 
-
-      <form >
-        <input>
-        <input type="button" value="Enviar Tipo button">
-      </form>
-
-      <h3>&lt; input <b> type="color"</b> &gt; Se utiliza para especificar un color  </h3> 
-      <form >
-        <input type="color">
-      </form>
-
-
-      <h3>&lt; input <b> type="date"</b> &gt; Se utiliza para introducir una fecha  </h3> 
-      <form >
-        <input type="date">
-      </form>
-
-
-      <h3>&lt; input <b> type="datetime-local"</b> &gt; Se utiliza para introducir fcha y hora   </h3> 
-      <form >
-        <input type="datetime-local">
-      </form>
-
-
-      <h3>&lt; input <b> type="email"</b> &gt; Se utiliza para introducir un email   </h3> 
-      <form >
-        <input type="email">
-      </form>
-
-
-      <h3>&lt; input <b> type="hidden"</b> &gt; campo oculto, contiene valor pero nose muestra   </h3> 
-      <form >
-        <input type="text">
-        <input type="hidden">
-      </form>
-
-
-      <h3>&lt; input <b> type="file"</b> &gt; botón para cargar un archivo   </h3> 
-      <form >
-        <input type="file">
-      </form>
-
-
-      <h3>&lt; input <b> type="month"</b> &gt; Se utiliza para introducir un mes   </h3> 
-      <form >
-        <input type="month">
-      </form>
-
-
-      <h3>&lt; input <b> type="number"</b> &gt; Se utiliza para introducir valores numéricos   </h3> 
-      <form >
-        <input type="number">
-      </form>
-
-
-      <h3>&lt; input <b> type="password"</b> &gt; Se utiliza para introducir contraseñas. No permite ver los caracteres introducidos   </h3> 
-      <form >
-        <input type="password">
-      </form>
-
-
-      <h3>&lt; input <b> type="range"</b> &gt; Se utiliza para establecer un rango  </h3> 
-      <form >
-        <input type="range" step="10" min="0" max="100">
-      </form>
-
-
-      <h3>&lt; input <b> type="reset"</b> &gt; Se utiliza para resetear el formulario   </h3> 
-      <form >
-        <input type="reset">
-      </form>
-
-
-      <h3>&lt; input <b> type="search"</b> &gt; Se utiliza para las barras de búsqueda   </h3> 
-      <form >
-        <input type="search">
-      </form>
-
-
-      <h3>&lt; input <b> type="submit"</b> &gt; Se utiliza para enviar el formulario   </h3> 
-      <form >
-        <input type="text">
-        <input type="submit">
-      </form>
-
-
-      <h3>&lt; input <b> type="tel"</b> &gt; Se utiliza para introducir números telefónicos  </h3> 
-      <form >
-        <input type="tel">
-      </form>
-
-
-      <h3>&lt; input <b> type="text"</b> &gt; Se utiliza para introducir texto. Es un valor por defecto   </h3> 
-      <form >
-        <input type="text">
-      </form>
-
-
-      <h3>&lt; input <b> type="time"</b> &gt; Se utiliza para introducir dotos con formato hora  </h3> 
-      <form >
-        <input type="time">
-      </form>
-
-
-      <h3>&lt; input <b> type="url"</b> &gt; Se utiliza para introducir url's  </h3> 
-      <form >
-        <input type="url">
-      </form>
-
-
-      <h3>&lt; input <b> type="week"</b> &gt; Se utiliza para introducir una semana del año  </h3> 
-      <form >
-        <input type="week">
-      </form>
-
-      <h3>&lt; input <b> type="radio"</b> &gt; Permite seleccionar una única ioción de una lista de opciones relacionadas </h3> 
-      <form >
-        <h3>Género</h3>
-        <label>Masculino
-            <input type="radio" name="genero" value="masculino">
-        </label>
-        <label>Femenino
-            <input type="radio" name="genero" value="femenino">
-        </label>
-        <label>Indefinido
-            <input type="radio" name="genero" value="indefinido" checked>
-        </label>
-      </form>
-
-      <h3>&lt; input <b> type="checkbox"</b> &gt; Permite seleccionar varias opciones de una lista de opciones relacionadas   </h3> 
-
-      <h3>Lenguajes de programación que conoces</h3>
-      <label>HTML
-          <input type="checkbox" name="languages" value="html" checked>
-      </label>
-      <label>CSS
-          <input type="checkbox" name="languages" value="css" checked>
-      </label>
-      <label>JS
-          <input type="checkbox" name="languages" value="jacascript" checked>
-      </label>
-
-      <h2>Otros Atributos para formularios</h2>
-
-      <h3>&lt; Etiqueta <b> placeholder="Introduce el texto aquí"</b> &gt; Permite crear una guía en el input o espacio para escribir que desaparecerá cuando se ingresen datos </h3> 
-
-      <form >
-        <input type="text" placeholder="ingresa tu nombre">
-      </form>
-
-      <h3>&lt; Etiqueta <b> required</b> &gt; Hace que el campo sea obligatorio. No se enviará el formulario sin este campo </h3> 
-
-      <form >
-        <input type="text" placeholder="ingresa tu nombre" required>
-        <input type="submit">
-      </form>
-
-      <h3>&lt; Etiqueta <b> readonly</b> &gt; Hace que el campo sea de solo lectura</h3> 
-
-      <form >
-        <input type="text" placeholder="ingresa tu nombre" readonly>
-        <input type="submit">
-      </form>
-
-
-      <h3>&lt; Etiqueta <b> disabled</b> &gt; Desactiva el campo. No permite hacer nada con 'el</h3> 
-
-      <form >
-        <input type="text" placeholder="ingresa tu nombre" disabled>
-        <input type="submit">
-      </form>
-
-
-      <h3>&lt; Etiqueta <b> min -max</b> &gt; permite establecer el mínimo y máximo en un campo numérico</h3> 
-
-      <form >
-        <input type="number" min="5" max="10">
-        <input type="submit">
-      </form>
-
-
-
-      <h3>&lt; Etiqueta <b> minlength - maxlength</b> &gt; permite establecer el mínimo y máximo de caracteres en un campo numérico</h3> 
-
-      <form >
-        <input type="text" minlength="5" maxlength="10">
-        <input type="submit">
-      </form>
-
-
-
-      <h3>&lt; Etiqueta <b> autofocus</b> &gt; permite ubicar el cursor en un campo específico del formulario</h3> 
-
-      <form >
-        <input type="text" minlength="5" maxlength="10">
-        <input type="submit">
-      </form>
-
-
-
-
-
-      <h2>Otras Etiquetas para Formularios</h2>
-
-      <h3>&lt;  <b> select name="nombre-lista"</b> multiple &gt; Crea una lista de opciones donde podemos seleccionar una o varias opciones   </h3>
-      <p>El atributo 'multiple' permite seleccionar varios elementos de la lista</p>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/header.css">
+      <link rel="stylesheet" href="../css/form.css">
+      <style>
+          h3{
+              font-weight: normal;
+          }
+      </style>
+
+      <title>Formularios</title>
+  </head>
+
+  <body class="body-form">
+
+    <header class="header-index">
+        <div class="contenedor-imagen">
+          <img class="imagen-titulo" src="./imagenes/logo-html.png" alt="" srcset="">
+        </div>
+
+        <div class="contenedor-titulo-nav">
+
+          <div class="contenedor-titulo">
+              <h1 class="titulo">INSTRUCTIVO DE HTML BÁSICO</h1>
+          </div>
       
-      <h3>&lt;  <b> option</b> value="nombre-elemento" &gt; Crea un elemento de la lista deplegable </h3>
+          <div class="contenedor-nav">
+            <nav>
+              <ul class="lista-nav">
+                <li class="item-lista-nav"><a class="link-item-nav" href="/index.html">Inicio</a></li>
+                <li class="item-lista-nav"><a class="link-item-nav" href="./html/etiquetas.html">Etiquetas</a></li>
+                <li class="item-lista-nav"><a class="link-item-nav" href="./html/trabajo-multimedia.html">Multimedia</a></li>
+                <li class="item-lista-nav"><a class="link-item-nav" href="./html/bloquesylinea.html">Bloques y Línea</a></li>
+                <li class="item-lista-nav"><a class="link-item-nav" href="./html/formularios.html">Formularios</a></li>
+                <li class="item-lista-nav"><a class="link-item-nav" href="./html/section-article.html">Section-Article</a></li>
+                <li class="item-lista-nav"><a class="link-item-nav" href="./html/atributos.html">Atributos</a></li>
+                <li class="item-lista-nav"><a class="link-item-nav" href="./html/ejerecicio1.html">Ejemplos</a></li>
+              </ul>
+            </nav>
       
-      <h3>&lt;  <b> select</b> &gt; Crea una lista de opciones donde podemos seleccionar una o varias opciones   </h3>
-      
-      <h3>&lt;  <b> optgroup</b> label="nombre-subgrupo" &gt; Permite crear un subgrupo dentro del select que contendrá etiquetas 'option' </h3>
-      
-      <h3>&lt;  <b> datalist</b> id="nombre-lista" &gt; Permite crear un subgrupo dentro del select que contendrá etiquetas 'option' </h3>
-      <p>Esta etiqueta requiere una etiqueta 'input' con atributo &lt; input <b>type="list" list="id del datalist"</b> &gt; </p>
+          </div>
 
-      <h3>&lt;  <b> fieldset</b> &gt; Esta etiqueta permite crear un 'marco' que permita encontrar más fácil el 'form'</h3>
-      
-      <h3>&lt;  <b> legend</b> &gt; Esta etiqueta permite poner un nombre a la etiqueta 'fieldset</h3>
-      
-      
-      <p>Ejemplo de un 'select' sencillo</p>
-        <select name="lenguajes" multiple>
-            <option value="html">html</option>
-            <option value="css">css</option>
-            <option value="js">js</option>
-            <option value="python">python</option>
-            <option value="java">java</option>
-        </select>
 
-        <p>Ahora un algo más avanzado</p>
-        <select name="mascotas" multiple>
-            <optgroup label="4 patas">
-                <option value="perro">Perro</option>
-                <option value="gato">Gato</option>
-                <option value="hamster">Hamster</option>
-                <option value="conejo">Conejo</option>
-            </optgroup>
-            <optgroup label="aves">
-                <option value="loro">Loro</option>
-                <option value="canario">Canario</option>
-            </optgroup>
-            <optgroup label="peligrosos">
-                <option value="serpiente">Serpiente</option>
-                <option value="tarantura">Tarántula</option>
-                <option value="viuda-negra">Viuda Negra</option>
-            </optgroup>
-        </select>
+        </div>
+    </header>
 
-        <p>'select' tipo 'datalist'</p>
-        <h3>Elementos Seleccionables</h2>
-        <form >
-            <input type="list" list="mascotas">
-            <datalist id="mascotas">
-                <option value="perro"></option>
-                <option value="gato"></option>
-                <option value="hamster"></option>
-                <option value="conejo"></option>
-                <option value="loro"></option>
-                <option value="canario"></option>
-                <option value="serpiente"></option>
-                <option value="tarantura"></option>
-                <option value="viuda negra"></option>
+    <div class="contenedor-main-aside">
 
-            </datalist>
+      <main class="main-form">
+
+
+
+
+      <h2>FORMULARIOS</h2>
+
+      <h3>Estructura Básica</h3>
+
+      <p>Se compone de 4 etiquetas:</p>
+
+      <dl>
+          <dt>Etiqueta form </dt>
+          <dd>Etiqueta que encierra todo el formulario</dd>
+          <dt>Etiqueta label</dt>
+          <dd>Sirve para dar nombre al campo a rellenar</dd>
+          <dt>Etiqueta input</dt>
+          <dd>Crea un espacio donde el usuario podrá interactuar</dd>
+          <dt>Etiqueta button</dt>
+          <dd>Crea un botón que permitirá enviar la información del formulario</dd>
+        </dl>
+
+        <h2>Tipos de Atributos para &lt; input type="xxx" &gt;</h2>
+
+        <h3>&lt; input <b> type="button"</b> &gt; Se comporta igual que un <b>&lt; button &gt; </b>, solo que no envía formularios</h3> 
+
+        <form class=" form form1" >
+          <input class="input">
+          <input class="boton" type="button" value="Enviar Tipo button">
         </form>
 
-      <h3>&lt; <b> </b> &gt;   &lt; / <b> </b> &gt;</h3> 
+        <h3>&lt; input <b> type="color"</b> &gt; Se utiliza para especificar un color  </h3> 
+        <form class=" form form2" >
+          <input class="input" type="color">
+        </form>
 
 
-      <h3>Formulario Básico</h3>
-      <form action="">
-        <label for="">Nombre</label>
-        <input type="text">
-        <button>Enviar Formulario</button>
-      </form>
+        <h3>&lt; input <b> type="date"</b> &gt; Se utiliza para introducir una fecha  </h3> 
+        <form class=" form form3">
+          <input class="input" type="date">
+        </form>
+
+
+        <h3>&lt; input <b> type="datetime-local"</b> &gt; Se utiliza para introducir fcha y hora   </h3> 
+        <form class=" form form4">
+          <input class="input" type="datetime-local">
+        </form>
+
+
+        <h3>&lt; input <b> type="email"</b> &gt; Se utiliza para introducir un email   </h3> 
+        <form class=" form form5">
+          <input class="input" type="email">
+        </form>
+
+
+        <h3>&lt; input <b> type="hidden"</b> &gt; campo oculto, contiene valor pero nose muestra   </h3> 
+        <form class=" form form6">
+          <input class="input" type="text">
+          <input class="input" type="hidden">
+        </form>
+
+
+        <h3>&lt; input <b> type="file"</b> &gt; botón para cargar un archivo   </h3> 
+        <form class=" form form7">
+          <input class="input" type="file">
+        </form>
+
+
+        <h3>&lt; input <b> type="month"</b> &gt; Se utiliza para introducir un mes   </h3> 
+        <form class=" form form8">
+          <input class="input" type="month">
+        </form>
+
+
+        <h3>&lt; input <b> type="number"</b> &gt; Se utiliza para introducir valores numéricos   </h3> 
+        <form class=" form form9">
+          <input class="input" type="number">
+        </form>
+
+
+        <h3>&lt; input <b> type="password"</b> &gt; Se utiliza para introducir contraseñas. No permite ver los caracteres introducidos   </h3> 
+        <form class=" form form10">
+          <input class="input" type="password">
+        </form>
+
+
+        <h3>&lt; input <b> type="range"</b> &gt; Se utiliza para establecer un rango  </h3> 
+        <form class=" form form11">
+          <input class="input" type="range" step="10" min="0" max="100">
+        </form>
+
+
+        <h3>&lt; input <b> type="reset"</b> &gt; Se utiliza para resetear el formulario   </h3> 
+        <form class=" form form12">
+          <input class="input" type="reset">
+        </form>
+
+
+        <h3>&lt; input <b> type="search"</b> &gt; Se utiliza para las barras de búsqueda   </h3> 
+        <form class=" form form13">
+          <input class="input" type="search">
+        </form>
+
+
+        <h3>&lt; input <b> type="submit"</b> &gt; Se utiliza para enviar el formulario   </h3> 
+        <form class=" form form14">
+          <input class="input" type="text">
+          <input class="boton" type="submit">
+        </form>
+
+
+        <h3>&lt; input <b> type="tel"</b> &gt; Se utiliza para introducir números telefónicos  </h3> 
+        <form class=" form form15">
+          <input class="input" type="tel">
+        </form>
+
+
+        <h3>&lt; input <b> type="text"</b> &gt; Se utiliza para introducir texto. Es un valor por defecto   </h3> 
+        <form class=" form form16">
+          <input class="input" type="text">
+        </form>
+
+
+        <h3>&lt; input <b> type="time"</b> &gt; Se utiliza para introducir dotos con formato hora  </h3> 
+        <form class=" form form17">
+          <input class="input" type="time">
+        </form>
+
+
+        <h3>&lt; input <b> type="url"</b> &gt; Se utiliza para introducir url's  </h3> 
+        <form class=" form form18">
+          <input class="input" type="url">
+        </form>
+
+
+        <h3>&lt; input <b> type="week"</b> &gt; Se utiliza para introducir una semana del año  </h3> 
+        <form class=" form form19">
+          <input class="input" type="week">
+        </form>
+
+        <h3>&lt; input <b> type="radio"</b> &gt; Permite seleccionar una única ioción de una lista de opciones relacionadas </h3> 
+        <form class=" form-radio form20">
+          <h3>Género</h3>
+          <label>Masculino
+              <input class="" type="radio" name="genero" value="masculino">
+          </label>
+          <label>Femenino
+              <input class="" type="radio" name="genero" value="femenino">
+          </label>
+          <label>Indefinido
+              <input class="" type="radio" name="genero" value="indefinido" checked>
+          </label>
+        </form>
+
+        <h3>&lt; input <b> type="checkbox"</b> &gt; Permite seleccionar varias opciones de una lista de opciones relacionadas   </h3> 
+
+        <h3>Lenguajes de programación que conoces</h3>
+
+        <div class="form-checkbox">
+
+          <label>HTML
+              <input class="" type="checkbox" name="languages" value="html" checked>
+          </label>
+          <label>CSS
+              <input class="" type="checkbox" name="languages" value="css" checked>
+          </label>
+          <label>JS
+              <input class="" type="checkbox" name="languages" value="jacascript" checked>
+          </label>
+
+
+        </div>
+
+
+
+
+        <h2>Otros Atributos para formularios</h2>
+
+        <h3>&lt; Etiqueta <b> placeholder="Introduce el texto aquí"</b> &gt; Permite crear una guía en el input o espacio para escribir que desaparecerá cuando se ingresen datos </h3> 
+
+        <form class=" form form21">
+          <input class="input" type="text" placeholder="ingresa tu nombre">
+        </form>
+
+        <h3>&lt; Etiqueta <b> required</b> &gt; Hace que el campo sea obligatorio. No se enviará el formulario sin este campo </h3> 
+
+        <form class=" form form22">
+          <input class="input" type="text" placeholder="ingresa tu nombre" required>
+          <input class="boton" type="submit">
+        </form>
+
+        <h3>&lt; Etiqueta <b> readonly</b> &gt; Hace que el campo sea de solo lectura</h3> 
+
+        <form class=" form form23">
+          <input class="input" type="text" placeholder="ingresa tu nombre" readonly>
+          <input class="boton" type="submit">
+        </form>
+
+
+        <h3>&lt; Etiqueta <b> disabled</b> &gt; Desactiva el campo. No permite hacer nada con 'el</h3> 
+
+        <form class=" form form24">
+          <input class="input" type="text" placeholder="ingresa tu nombre" disabled>
+          <input class="boton" type="submit">
+        </form>
+
+
+        <h3>&lt; Etiqueta <b> min -max</b> &gt; permite establecer el mínimo y máximo en un campo numérico</h3> 
+
+        <form class=" form form25">
+          <input class="input" type="number" min="5" max="10">
+          <input class="boton" type="submit">
+        </form>
+
+        <h3>&lt; Etiqueta <b> minlength - maxlength</b> &gt; permite establecer el mínimo y máximo de caracteres en un campo numérico</h3> 
+
+        <form class=" form form26">
+          <input class="input" type="text" minlength="5" maxlength="10">
+          <input class="boton" type="submit">
+        </form>
+
+        <h3>&lt; Etiqueta <b> autofocus</b> &gt; permite ubicar el cursor en un campo específico del formulario</h3> 
+
+        <form class=" form form27">
+          <input class="input" type="text" minlength="5" maxlength="10">
+          <input class="boton" type="submit">
+        </form>
+
+
+
+
+
+        <h2>Otras Etiquetas para Formularios</h2>
+
+        <h3>&lt;  <b> select name="nombre-lista"</b> multiple &gt; Crea una lista de opciones donde podemos seleccionar una o varias opciones   </h3>
+        <p>El atributo 'multiple' permite seleccionar varios elementos de la lista</p>
+
+        <br>        
+        <p>Ejemplo de un 'select' sencillo</p>
+          <select name="lenguajes" multiple>
+              <option value="html">html</option>
+              <option value="css">css</option>
+              <option value="js">js</option>
+              <option value="python">python</option>
+              <option value="java">java</option>
+          </select>
+
+
+
+
+        
+        <h3>&lt;  <b> option</b> value="nombre-elemento" &gt; Crea un elemento de la lista deplegable </h3>
+        
+        <h3>&lt;  <b> select</b> &gt; Crea una lista de opciones donde podemos seleccionar una o varias opciones   </h3>
+        
+        <h3>&lt;  <b> optgroup</b> label="nombre-subgrupo" &gt; Permite crear un subgrupo dentro del select que contendrá etiquetas 'option' </h3>
+        
+        <h3>&lt;  <b> datalist</b> id="nombre-lista" &gt; Permite crear un subgrupo dentro del select que contendrá etiquetas 'option' </h3>
+        <p>Esta etiqueta requiere una etiqueta 'input' con atributo &lt; input <b>type="list" list="id del datalist"</b> &gt; </p>
+        <br>
+
+
+          <p>Ahora un algo más avanzado</p>
+          <select name="mascotas" multiple>
+              <optgroup label="4 patas">
+                  <option value="perro">Perro</option>
+                  <option value="gato">Gato</option>
+                  <option value="hamster">Hamster</option>
+                  <option value="conejo">Conejo</option>
+              </optgroup>
+              <optgroup label="aves">
+                  <option value="loro">Loro</option>
+                  <option value="canario">Canario</option>
+              </optgroup>
+              <optgroup label="peligrosos">
+                  <option value="serpiente">Serpiente</option>
+                  <option value="tarantura">Tarántula</option>
+                  <option value="viuda-negra">Viuda Negra</option>
+              </optgroup>
+          </select>
+
+
+
+
+
+        
+        <h3>&lt;  <b> fieldset</b> &gt; Esta etiqueta permite crear un 'marco' que permita encontrar más fácil el 'form'</h3>
+        
+        <h3>&lt;  <b> legend</b> &gt; Esta etiqueta permite poner un nombre a la etiqueta 'fieldset</h3>
+
+        <h3>Formulario con 'fieldset'</h3>
+        <form class=" form-fieldset" action="">
+          <fieldset class="fieldset">
+              <legend>Datos Personales</legend>
+
+              <label for="name">Nombre</label>
+              <input class="input" type="text" id="name">
       
-      <h3>Avanzando en el Formulario</h3>
-      <form action="">
-        <label for="">
-            Nombre
-            <input type="text">
-        </label>        
-        <button>Enviar Formulario</button>
+              <label for="surname">Apellido</label>
+              <input class="input" type="text" id="surname">
+
+          </fieldset>
       </form>
 
-      <h3>Formulario con 'fieldset'</h3>
-      <form>
-        <fieldset>
-            <legend>Datos Personales</legend>
-
-            <label for="name">Nombre</label>
-            <input type="text" id="name">
-    
-            <label for="surname">Apellido</label>
-            <input type="text" id="surname">
-
-        </fieldset>
-    </form>
-
-    <br>
-    <input type="file">
-
-    <br>
-
-    <h3>Etiqueta <b>&lt;meter &gt;</b>: sieve para mostrar el progreso de un algo</h3>
-    <label for="fuel">Combustible</label>
-    <meter id="fuel" min="0" max="100" value="85" low="30" high="70" optimum="90">
-    </meter>
-
-    <h3>Etiqueta <b>&lt;progress &gt;</b>: sieve para mostrar el progreso de un algo</h3>
-    <label for="task">Tarea 1</label>
-    <progress id="task" min="0" max="100" value="85" low="30" high="70" optimum="90">
-    </progress>
-
-    <h3>Etiqueta &lt; textarea &gt;: sirve para introducir texto</h3>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
 
 
+
+        <br>
+        
+          <p>'select' tipo 'datalist'</p>
+          <h3>Elementos Seleccionables</h2>
+          <form class=" form form28">
+              <input class="input" type="list" list="mascotas">
+              <datalist id="mascotas">
+                  <option value="perro"></option>
+                  <option value="gato"></option>
+                  <option value="hamster"></option>
+                  <option value="conejo"></option>
+                  <option value="loro"></option>
+                  <option value="canario"></option>
+                  <option value="serpiente"></option>
+                  <option value="tarantura"></option>
+                  <option value="viuda negra"></option>
+
+              </datalist>
+          </form>
+
+        <h3>&lt; <b> </b> &gt;   &lt; / <b> </b> &gt;</h3> 
+
+
+        <h3>Formulario Básico</h3>
+        <form class=" form form-basico" action="">
+          <label for="">Nombre</label>
+          <input class="input" type="text">
+          <button class="boton">Enviar Formulario</button>
+        </form>
+        
+        <h3>Avanzando en el Formulario</h3>
+        <form class=" form form-avanzado" action="">
+          <label for="">
+              Nombre
+              <input class="input" type="text">
+          </label>        
+          <button class="boton">Enviar Formulario</button>
+        </form>
+
+      <br>
+
+      <div class="form form-file">
+
+        <input class="input" type="file">
+      </div>
+
+      <br>
+
+      <h3>Etiqueta <b>&lt;meter &gt;</b>: sieve para mostrar el progreso de un algo</h3>
+      <label for="fuel">Combustible</label>
+      <meter id="fuel" min="0" max="100" value="85" low="30" high="70" optimum="90">
+      </meter>
+
+      <h3>Etiqueta <b>&lt;progress &gt;</b>: sieve para mostrar el progreso de un algo</h3>
+      <label for="task">Tarea 1</label>
+      <progress id="task" min="0" max="100" value="85" low="30" high="70" optimum="90">
+      </progress>
+
+      <h3>Etiqueta &lt; textarea &gt;: sirve para introducir texto</h3>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+
+
+      </main>
+
+        
+      <aside class="aside-form">
+            <h2>Barra Lateral</h2>
+            <p>Información adicional, enlaces o anuncios pueden ir aquí.</p>
+      </aside>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <footer>
+          <p>&copy; 2025 lasaro069@gmail.com - Todos los derechos reservados.</p>
+    </footer>        
       
-    
-</body>
+  </body>
+
 </html>

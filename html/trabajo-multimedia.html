@@ -22,23 +22,62 @@
 </head>
 <body>
 
+
+
+
+    <header>
+      <div class="contenedor-imagen">
+        <img
+          class="imagen-titulo"
+          src="./imagenes/logo-html.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div class="contenedor-titulo-nav">
+        <div class="contenedor-titulo">
+          <h1 class="titulo">INSTRUCTIVO DE HTML BÁSICO</h1>
+        </div>
+
+        <div class="contenedor-nav">
+          <nav>
+            <ul>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="./etiquetas.html">Etiquetas</a></li>
+              <li><a href="./trabajo-multimedia.html">Multimedia</a></li>
+              <li><a href="./bloquesylinea.html">Bloques y Línea</a></li>
+              <li><a href="./formularios.html">Formularios</a></li>
+              <li><a href="./section-article.html">Section-Article</a></li>
+              <li><a href="./atributos.html">Atributos</a></li>
+              <li><a href="./ejerecicio1.html">Ejemplos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
     <h1>Contenido Embebido</h1>
 
     <h2>Insertar Imagen</h2>
-    <img src="/imagenes/guitarra-pipe-min.jpg" alt="guitarra y música" width="30%" aria-label="Guitarra con notas musicales multicolor en un fondo verde aguamarina">
+    <img src="../imagenes/guitarra-pipe-min.jpg" alt="guitarra y música" width="30%" aria-label="Guitarra con notas musicales multicolor en un fondo verde aguamarina">
 
     <h2>device Pixel Ratio</h2>
     <p>Es la relación de tamaño de la pantalla disponible para trabajar</p>
     <p>Para subir imágenes en DPR</p>
 
-    <img srcset="/imagenes/guitarra-pipe-min.jpg,
-    /imagenes/homero-y-bart.jp 2x" alt="guitarra rojo con negro" width="40%">
+    <img srcset="../imagenes/guitarra-pipe-min.jpg,
+    /imagenes/homero-y-bart.jpg 2x" alt="guitarra rojo con negro" width="40%">
 
     <h2>Etiqueta Picture</h2>
 
     <picture>
-        <source srcset="/imagenes/guitarra-pipe-min.jp">
-        <img src="/imagenes/guitarra-pipe-min.jp" alt="" width="40%">
+        <source srcset="/imagenes/guitarra-pipe-min.jpg">
+        <img src="../imagenes/guitarra-pipe-min1.jpg" alt="" width="40%">
     </picture>
 
     <h2>Etiquetas de Audio</h2>
@@ -50,11 +89,11 @@
         <li>autoplay</li>
         <li>loop</li>
     </ul>
-    <audio src="/audio/Adiós-Amor.mp3" controls></audio>
+    <audio src="../audio/Adiós-Amor.mp3" controls></audio>
 
     <h2>Etiquetas de Video</h2>
 
-    <video src="/video/Adiós-Amor.mp4" controls muted poster="/imagenes/user.png"></video>
+    <video src="../video/Adiós-Amor.mp4" controls muted poster="/imagenes/user.png"></video>
 
 
     

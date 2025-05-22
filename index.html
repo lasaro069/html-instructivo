@@ -5,244 +5,407 @@
     <meta name="description" content="Etiquetas más usadas en html" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        h3{
-            font-weight: normal;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Instructivo Html</title>
   </head>
 
-  <body>
-<!-- Para poder insertar código html y mostrarlo en el navegador como tal debemos utilizar para apertura y cierre de las etiquetas la combinacion de:
-    &lt; para < 
-    &gt; para > 
-    -->
-    <h1>ETIQUETAS</h1>
 
-    <h3>&lt;!--  <b>comentario</b>   --&gt;</h3>
-    <p>etiqueta para hacer comentarios a neustro código</p>
 
-    <h3>&lt; <b>head</b> &gt;</h3>
-    <p>Contiene la información que se pasa al navegador con la información de nuestra página</p>
 
-    <h3>&lt; <b>body</b> &gt;</h3>
-    <p>Representa el contenido de nuestra página web</p>
+  <body class="body-index">
+    <header class="header-index">
+      <div class="contenedor-imagen">
+        <img class="imagen-titulo" src="./imagenes/logo-html.png" alt="" srcset="">
+      </div>
 
-    <h3>&lt; <b>section</b> &gt;</h3>
-    <p>es un contenedor genérico que agurpa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos <i>&lt; section &gt;</i></p>
+      <div class="contenedor-titulo-nav">
 
-    <h3>&lt; <b>article</b> &gt;</h3>
-    <p>Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo.</p>
+        <div class="contenedor-titulo">
+            <h1 class="titulo">INSTRUCTIVO DE HTML BÁSICO</h1>
+        </div>
     
-    <h3>&lt; <b>aside</b> &gt;</h3>
-    <p> Se utiliza para repreesentar contenido relacionado pero que no forma parte del contenido principal. </p>
-    <p>Pueden ser links con contenido relacionado al tema de la página pero que no hacen parte del contenido principal</p>
-    <p>Puede estar tanto dentro como fuera del  &lt; main &gt;</p>
-
-    <p>Los &lt; <b>articles</b> &gt; necesitan un &lt; <b>header</b> &gt; es decir, como los &lt; <b>article</b> &gt; son contenido independiente pueden tener su propio &lt; <b>header</b> &gt; y su propio &lt; <b>footer</b> &gt;</p>
-<br>
-    <h2 id="bloque">Elementos de Bloque</h2>
-
-    <p>Son aquellas etiquetas que ocupan el ancho total de la pantalla, desplazando cualquier etiqueta debajo de ella</p>
-
-    <h3>&lt; <b>article</b> &gt; Contenido de Artículo &lt; / <b>article</b> &gt;</h3> 
-    <h3>&lt; <b>aside</b> &gt; contenido Adicional &lt; / <b>aside</b> &gt;</h3> 
-    <h3>&lt; <b>audio</b> &gt; Reproductor de Audio &lt; / <b>audio</b> &gt;</h3> 
-    <h3>&lt; <b>blockquote</b> &gt; Bloque de "cita" &lt; / <b>blockquote</b> &gt;</h3> 
-    <h3>&lt; <b>canvas</b> &gt; Dbujo de Canvas &lt; / <b>canvas</b> &gt;</h3> 
-    <h3>&lt; <b>div</b> &gt; División de Documento &lt; / <b>div</b> &gt;</h3> 
-    <h3>&lt; <b>dl</b> &gt; Listas de Definición (diccionario) lleva en su interior   &lt; dt &gt; para el término a definir y  &lt; dd &gt; la definición del término &lt; / <b>dl</b> &gt;</h3> 
-    <h3>&lt; <b>fieldset</b> &gt; Etiqueta de conjunto de campos &lt; / <b>fieldset</b> &gt;</h3> 
-    <h3>&lt; <b>figcaption</b> &gt; leyenda de figura &lt; / <b>figcaption</b> &gt;</h3> 
-    <h3>&lt; <b>figure</b> &gt; Grupos contenido multimedia con una leyenda &lt; / <b>figure</b> &gt;</h3> 
-    <h3>&lt; <b> footer </b> &gt; Sección de pie de página  &lt; / <b> footer </b> &gt;</h3> 
-    <h3>&lt; <b> form </b> &gt; Formulario de entrada  &lt; / <b>form </b> &gt;</h3> 
-    <h3>&lt; <b> h1 - h6 </b> &gt; Niveles de cabecera - Títulos  &lt; / <b> h1 -h6 </b> &gt;</h3> 
-    <h3>&lt; <b> header </b> &gt; Sección o cabecera de la página  &lt; / <b> header </b> &gt;</h3> 
-    <h3>&lt; <b>hgroup </b> &gt; Grupos información de encabezado  &lt; / <b> hgroup</b> &gt;</h3> 
-    <h3>&lt; <b> hr </b> &gt; Regla Horizontal  &lt; / <b> hr </b> &gt;</h3> 
-    <h3>&lt; <b>li </b> &gt; Elemento de lista &lt; / <b>li </b> &gt;</h3> 
-    <h3>&lt; <b>main </b> &gt; Engloba el único contenido central del documento &lt; / <b>main </b> &gt;</h3> 
-    <h3>&lt; <b>nav </b> &gt; Contiene enlaces de navegación &lt; / <b>nav </b> &gt;</h3> 
-    <h3>&lt; <b> noscript</b> &gt; Contenido para ser usado si los scripts no son soportados o permitidos  &lt; / <b> noscript</b> &gt;</h3> 
-    <h3>&lt; <b> ol</b> &gt; Lista ordenada  &lt; / <b> ol</b> &gt;</h3> 
-    <h3>&lt; <b>output </b> &gt; formulario de salida  &lt; / <b> output</b> &gt;</h3> 
-    <h3>&lt; <b>p </b> &gt; Párrafo  &lt; / <b>p </b> &gt;</h3> 
-    <h3>&lt; <b> pre</b> &gt; Texto preformateado  &lt; / <b> pre</b> &gt;</h3> 
-    <h3>&lt; <b> section</b> &gt; Sección de una página web  &lt; / <b>section </b> &gt;</h3> 
-    <h3>&lt; <b> table</b> &gt; Tabla  &lt; / <b> table</b> &gt;</h3> 
-    <h3>&lt; <b> tfoot</b> &gt; Pie de tabla  &lt; / <b>tfoot </b> &gt;</h3> 
-    <h3>&lt; <b> ul</b> &gt; lista no ordenada  &lt; / <b> ul</b> &gt;</h3> 
-    <h3>&lt; <b> video</b> &gt; Reproductor de video  &lt; / <b> video</b> &gt;</h3> 
-
-    <h3>&lt; <b> </b> &gt;   &lt; / <b> </b> &gt;</h3> 
+        <div class="contenedor-nav">
+          <nav>
+            <ul class="lista-nav">
+              <li class="item-lista-nav"><a class="link-item-nav" href="/index.html">Inicio</a></li>
+              <li class="item-lista-nav"><a class="link-item-nav" href="./html/etiquetas.html">Etiquetas</a></li>
+              <li class="item-lista-nav"><a class="link-item-nav" href="./html/trabajo-multimedia.html">Multimedia</a></li>
+              <li class="item-lista-nav"><a class="link-item-nav" href="./html/bloquesylinea.html">Bloques y Línea</a></li>
+              <li class="item-lista-nav"><a class="link-item-nav" href="./html/formularios.html">Formularios</a></li>
+              <li class="item-lista-nav"><a class="link-item-nav" href="./html/section-article.html">Section-Article</a></li>
+              <li class="item-lista-nav"><a class="link-item-nav" href="./html/atributos.html">Atributos</a></li>
+              <li class="item-lista-nav"><a class="link-item-nav" href="./html/ejerecicio1.html">Ejemplos</a></li>
+            </ul>
+          </nav>
+    
+        </div>
 
 
-<br>
+      </div>
+    </header>
+
+    <div class="contenedor-main-aside">
+
+      <main class="main-index">
+        <h2>¿Qué es HTML? </h2>
+        <p>HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para crear páginas web. A continuación, se presentan las etiquetas más comunes y su uso.</p>
+        <p>HTML es un lenguaje de marcado que se utiliza para estructurar el contenido en la web. A continuación, se presentan algunas de las etiquetas más comunes y su uso.</p>
+        <p>Las etiquetas HTML son elementos que definen la estructura y el contenido de una página web. Cada etiqueta tiene un propósito específico y puede contener atributos que modifican su comportamiento o apariencia.</p>
+
+        <!-- Para poder insertar código html y mostrarlo en el navegador como tal debemos utilizar para apertura y cierre de las etiquetas la combinacion de:
+      &lt; para < 
+      &gt; para > -->
+
+        <h2>ESQUEMA DE UNA PÁGINA HTML</h2>
+        <section class="seccion seccion-imagen-estructura">
+          <figure>
+            <img src="./imagenes/estructura-de-una-pagina-en-HTML.png" alt="esquema de una página html" width="500px" />
+            <figcaption>Esquema de una página HTML</figcaption>
+          </figure>
+        </section>
+
+        <section class="seccion seccion-etiquetas">
 
 
-    <h2>Elementos de Línea</h2>
+          
+              <h2>ETIQUETAS</h2>
+          
+              <h3>&lt;!--  <b>comentario</b>   --&gt;</h3>
+              <p>etiqueta para hacer comentarios a nuestro código</p>
+          
+              <h3>&lt; <b>head</b> &gt;</h3>
+              <p>Contiene la información que se pasa al navegador con la información de nuestra página</p>
+          
+              <h3>&lt; <b>body</b> &gt;</h3>
+              <p>Representa el contenido de nuestra página web</p>
+          
+              <h3>&lt; <b>section</b> &gt;</h3>
+              <p>es un contenedor genérico que agurpa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos <i>&lt; section &gt;</i></p>
+          
+              <h3>&lt; <b>article</b> &gt;</h3>
+              <p>Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendrá sentido por sí mismo.</p>
+              
+              <h3>&lt; <b>aside</b> &gt;</h3>
+              <p> Se utiliza para repreesentar contenido relacionado pero que no forma parte del contenido principal. </p>
+              <p>Pueden ser links con contenido relacionado al tema de la página pero que no hacen parte del contenido principal</p>
+              <p>Puede estar tanto dentro como fuera del  &lt; main &gt;</p>
+          
+              <p>Los &lt; <b>articles</b> &gt; necesitan un &lt; <b>header</b> &gt; es decir, como los &lt; <b>article</b> &gt; son contenido independiente pueden tener su propio &lt; <b>header</b> &gt; y su propio &lt; <b>footer</b> &gt;</p>
 
-    <p>Son aquellas etiquetas que ocupan el ancho estricto de la etiqueta, permitiendo compartir su espacio horizontal con otras etiquetas</p>
-
-    <h3>&lt; <b>span </b> &gt; Etiqueta para seleccionar una parte del texto y poderla alterar  &lt; / <b>span </b> &gt;</h3> 
-    <h3>&lt; <b>em </b> &gt; hace <em>énfasis</em> a texto indicado  &lt; / <b>em </b> &gt;</h3> 
-    <h3>&lt; <b>strong </b> &gt; hace énfasis <strong>más fuerte </strong>  &lt; / <b> strong</b> &gt;</h3> 
-    <h3>&lt; <b>small </b> &gt; hace <small>menos énfasis</small> al texto  &lt; / <b> small</b> &gt;</h3> 
-    <h3>&lt; <b>br </b> &gt; Forza un salto de línea  &lt; / <b>br </b> &gt;</h3> 
-    <h3>&lt; <b> wbr</b> &gt; salto de línea, solo si hace falta 
-    <h3>&lt; <b>time </b> &gt; Para representar contenido de hora/fecha  &lt; / <b> time</b> &gt;</h3> 
-    <h3>&lt; <b> i</b> &gt; <i>Texto en itálica</i>  &lt; / <b>i </b> &gt;</h3> 
-    <h3>&lt; <b>b </b> &gt; texto en <b>negrita</b>  &lt; / <b>b </b> &gt;</h3> 
-    <h3>&lt; <b> u</b> &gt; Texto <u>subrayado</u>  &lt; / <b>u </b> &gt;</h3>
-    <h3>&lt; <b> sup</b> &gt;  superindice 4 <sup>2</sup> &lt; / <b> sup</b> &gt;</h3> 
-
-    <h3>&lt; <b> sub</b> &gt; subindice h <sub>2</sub>0  &lt; / <b>sub </b> &gt;</h3> 
-
-
-
-    <h3>&lt; <b> </b> &gt;   &lt; / <b> </b> &gt;</h3> 
-
-    <h2>Etiquetas de Enalce</h2>
-
-    <h3>Rutas absolutas:</h3>
-    <p>Tiene un protocolo <i>http</i> o <i>https</i> y son únicas en la red.</p>
-    <p>Se suelen utilizar para rutas externas.</p>
-
-    <h3>Rutas relativas:</h3>
-    <p>Pueden ser relativas al punto donde nos escontramos o relativas a la raíz del proyecto.</p>
-    <p>No usan protocolo de internet</p>
-    <p>Si el recutso se encuentra al mismo nivel, es decir, en la misma carpeta, pondremos ul nombre del archivo y la extensión</p>
-    <p>Si necesitamos salir de la carpeta actual, usaremos ../ por cada nivel que queremos subir</p>
+        </section>
+        <br>
+        
+        <section class="seccion seccion-elementos-bloque">
 
 
+          <h2 id="bloque">Elementos de Bloque</h2>
 
-    <h3>&lt; <b>a href="./dirección o ruta" </b> &gt; no s crea un enlace a la dirección o ruta especificada en la etiqueta  &lt; / <b> </b> &gt;</h3> 
+          <p>Son aquellas etiquetas que ocupan el ancho total de la pantalla, desplazando cualquier etiqueta debajo de ella</p>
 
-    <h3>&lt; <b>a href="" target="_blank"</b> &gt; Se utiliza en rutas absolutas. abre la ventana en una nueva ventana, sin cerrar la actual  &lt; / <b> </b> &gt;</h3> 
+          <h3>&lt; <b>article</b> &gt; Contenido de Artículo &lt; / <b>article</b> &gt;</h3> 
+          <h3>&lt; <b>aside</b> &gt; contenido Adicional &lt; / <b>aside</b> &gt;</h3> 
+          <h3>&lt; <b>audio</b> &gt; Reproductor de Audio &lt; / <b>audio</b> &gt;</h3> 
+          <h3>&lt; <b>blockquote</b> &gt; Bloque de "cita" &lt; / <b>blockquote</b> &gt;</h3> 
+          <h3>&lt; <b>canvas</b> &gt; Dbujo de Canvas &lt; / <b>canvas</b> &gt;</h3> 
+          <h3>&lt; <b>div</b> &gt; Contenedor general &lt; / <b>div</b> &gt;</h3> 
+          <h3>&lt; <b>dl</b> &gt; Listas de Definición (diccionario) lleva en su interior   &lt; dt &gt; para el término a definir y  &lt; dd &gt; la definición del término &lt; / <b>dl</b> &gt;</h3> 
+          <h3>&lt; <b>fieldset</b> &gt; Etiqueta de conjunto de campos &lt; / <b>fieldset</b> &gt;</h3> 
+          <h3>&lt; <b>figcaption</b> &gt; leyenda de figura &lt; / <b>figcaption</b> &gt;</h3> 
+          <h3>&lt; <b>figure</b> &gt; Grupos contenido multimedia con una leyenda &lt; / <b>figure</b> &gt;</h3> 
+          <h3>&lt; <b> footer </b> &gt; Sección de pie de página  &lt; / <b> footer </b> &gt;</h3> 
+          <h3>&lt; <b> form </b> &gt; Formulario de entrada  &lt; / <b>form </b> &gt;</h3> 
+          <h3>&lt; <b> h1 - h6 </b> &gt; Niveles de cabecera - Títulos  &lt; / <b> h1 -h6 </b> &gt;</h3> 
+          <h3>&lt; <b> header </b> &gt; Sección o cabecera de la página  &lt; / <b> header </b> &gt;</h3> 
+          <h3>&lt; <b>hgroup </b> &gt; Grupos información de encabezado  &lt; / <b> hgroup</b> &gt;</h3> 
+          <h3>&lt; <b> hr </b> &gt; Regla Horizontal  &lt; / <b> hr </b> &gt;</h3> 
+          <h3>&lt; <b>li </b> &gt; Elemento de lista &lt; / <b>li </b> &gt;</h3> 
+          <h3>&lt; <b>main </b> &gt; Engloba el único contenido central del documento &lt; / <b>main </b> &gt;</h3> 
+          <h3>&lt; <b>nav </b> &gt; Contiene enlaces de navegación &lt; / <b>nav </b> &gt;</h3> 
+          <h3>&lt; <b> noscript</b> &gt; Contenido para ser usado si los scripts no son soportados o permitidos  &lt; / <b> noscript</b> &gt;</h3> 
+          <h3>&lt; <b> ol</b> &gt; Lista ordenada  &lt; / <b> ol</b> &gt;</h3> 
+          <h3>&lt; <b>output </b> &gt; formulario de salida  &lt; / <b> output</b> &gt;</h3> 
+          <h3>&lt; <b>p </b> &gt; Párrafo  &lt; / <b>p </b> &gt;</h3> 
+          <h3>&lt; <b> pre</b> &gt; Texto preformateado  &lt; / <b> pre</b> &gt;</h3> 
+          <h3>&lt; <b> section</b> &gt; Sección de una página web  &lt; / <b>section </b> &gt;</h3> 
+          <h3>&lt; <b> table</b> &gt; Tabla  &lt; / <b> table</b> &gt;</h3> 
+          <h3>&lt; <b> tfoot</b> &gt; Pie de tabla  &lt; / <b>tfoot </b> &gt;</h3> 
+          <h3>&lt; <b> ul</b> &gt; lista no ordenada  &lt; / <b> ul</b> &gt;</h3> 
+          <h3>&lt; <b> video</b> &gt; Reproductor de video  &lt; / <b> video</b> &gt;</h3> 
 
-    <h3>&lt; <b>a href="" download </b> &gt; Se utiliza para descargar el recurso seleccionado. Solo se descargan los archivos locales  &lt; / <b> </b> &gt;</h3> 
-
-
-    <h2>Navegación dentro de la página</h2>
-    <p>Se hace a través de 'id' dentro de la etiqueta donde se quiera hacer ancla</p>
-
-    <h3>&lt; <b>a href="#Id_etiqueta" </b> &gt; Me permite navegar dentro de elementos destacados del documento &lt; / <b> </b> &gt;</h3> 
-
-    <p>Ejemplo:</p>
-    <a href="#bloque">Elementos de Bloque</a>
-
-    <h2>Ejemplo de Lista de Definición</h2>
-    <dl>
-      <dt>HTML</dt>
-      <dd>HiperText markup Language: es un lenguaje de marcado que se usa para estructurar datos en una página web</dd>
-      <dt>CSS</dt>
-      <dd>Cascade Style Sheets: Hoja de estilos en cascada. Se utiliza para dar estilos al html</dd>
-      <dt></dt>
-      <dd></dd>
-    </dl>
-
-    <h2>Ejemplo Listas Desordenadas</h2>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-
-    <h2>Tablas</h2>
-    <p>Utiliza 3 etiquetas:</p>
-    <ul>
-      <li>     <h3>&lt; <b>table </b> &gt; Etiqueta que encierra la tabla  &lt; / <b> table</b> &gt;</h3> 
-      </li>
-      <li>    <h3>&lt; <b>tr </b> &gt; <i>table row</i>:  etiqueta que construye una fila  &lt; / <b> </b> &gt;</h3> 
-      </li>
-      <li>    <h3>&lt; <b> td</b> &gt; <i>table data</i>: etiqueta que construye una celda  &lt; / <b> </b> &gt;</h3> 
-      </li>
-      <li>    <h3>&lt; <b> th</b> &gt; <i></i> Se utiliza para crear las celdas de cabecera de la tabla  &lt; / <b> </b> &gt;</h3> 
-      </li>
-    </ul>
-    <p>El número de celdas dentro de un 'tr' establecerá el número de columnas de la tabla.</p>
-
-    <table>
-      <caption>Horario de Clases</caption>  <!-- esta etiqueta se usa para poner título a la tabla -->     
-      <thead>
-        <tr>
-          <th>hora</th>
-          <th>lunes</th>
-          <th>martes</th>
-          <th>miércoles</th>
-          <th>jeuves</th>
-          <th>viernes</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>08:30</td>
-          <td>matematica</td>
-          <td>ingles</td>
-          <td>sociales</td>
-          <td>dibujo</td>
-          <td rowspan="2">quimica</td>
-        </tr>
-        <tr>
-          <td>09:30</td>
-          <td>matematica</td>
-          <td>ingles</td>
-          <td>sociales</td>
-          <td>dibujo</td>
-        </tr>
-        <tr>
-          <td>10:30</td>
-          <td colspan="5">recreo</td>
-        </tr>
-        <tr>
-          <td>11:30</td>
-          <td rowspan="2">matematica</td>
-          <td>ingles</td>
-          <td>sociales</td>
-          <td>dibujo</td>
-          <td>quimica</td>
-        </tr>
-        <tr>
-          <td>12:30</td>
-          <td>ingles</td>
-          <td>sociales</td>
-          <td>dibujo</td>
-          <td>quimica</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="5">Total de Asignaturas</td>
-          <td>12</td>
-        </tr>
-      </tfoot>
-
-    </table>
-
-
-        <tr>
-          <td>08:30</td>
-          <td>matematica</td>
-          <td>ingles</td>
-          <td>sociales</td>
-          <td>dibujo</td>
-          <td>quimica</td>
-        </tr>
-
-        <pre>
-          <code>
-            <main></main>
-          </code>
-        </pre>
+          <h3>&lt; <b> </b> &gt;   &lt; / <b> </b> &gt;</h3> 
 
 
 
 
+        </section>
+        <br>
+
+      <section class="seccion seccion-elementos-linea">
 
 
+
+        <h2>Elementos de Línea</h2>
+
+        <p>Son aquellas etiquetas que ocupan el ancho estricto de la etiqueta, permitiendo compartir su espacio horizontal con otras etiquetas</p>
+
+        <h3>&lt; <b>span </b> &gt; Etiqueta para seleccionar una parte del texto y poderla alterar  &lt; / <b>span </b> &gt;</h3> 
+        <h3>&lt; <b>em </b> &gt; hace <em>énfasis</em> a texto indicado  &lt; / <b>em </b> &gt;</h3> 
+        <h3>&lt; <b>strong </b> &gt; hace énfasis <strong>más fuerte </strong>  &lt; / <b> strong</b> &gt;</h3> 
+        <h3>&lt; <b>small </b> &gt; hace <small>menos énfasis</small> al texto  &lt; / <b> small</b> &gt;</h3> 
+        <h3>&lt; <b>br </b> &gt; Forza un salto de línea  &lt; / <b>br </b> &gt;</h3> 
+        <h3>&lt; <b> wbr</b> &gt; salto de línea, solo si hace falta 
+        <h3>&lt; <b>time </b> &gt; Para representar contenido de hora/fecha  &lt; / <b> time</b> &gt;</h3> 
+        <h3>&lt; <b> i</b> &gt; <i>Texto en itálica</i>  &lt; / <b>i </b> &gt;</h3> 
+        <h3>&lt; <b>b </b> &gt; texto en <b>negrita</b>  &lt; / <b>b </b> &gt;</h3> 
+        <h3>&lt; <b> u</b> &gt; Texto <u>subrayado</u>  &lt; / <b>u </b> &gt;</h3>
+        <h3>&lt; <b> sup</b> &gt;  superindice 4 <sup>2</sup> &lt; / <b> sup</b> &gt;</h3> 
+
+        <h3>&lt; <b> sub</b> &gt; subindice h <sub>2</sub>0  &lt; / <b>sub </b> &gt;</h3> 
+        <h3>&lt; <b> </b> &gt;   &lt; / <b> </b> &gt;</h3> 
+
+        
+        
+        
+        
+        
+        
+      </section>
+      <br>
+
+      <section class="seccion seccion-etiquetas-enlace">
+
+
+
+        <h2>Etiquetas de Enalce</h2>
+
+        <h3>Rutas absolutas:</h3>
+        <p>Tiene un protocolo <i>http</i> o <i>https</i> y son únicas en la red.</p>
+        <p>Se suelen utilizar para rutas externas.</p>
+
+        <h3>Rutas relativas:</h3>
+        <p>Pueden ser relativas al punto donde nos escontramos o relativas a la raíz del proyecto.</p>
+        <p>No usan protocolo de internet</p>
+        <p>Si el recutso se encuentra al mismo nivel, es decir, en la misma carpeta, pondremos ul nombre del archivo y la extensión</p>
+        <p>Si necesitamos salir de la carpeta actual, usaremos ../ por cada nivel que queremos subir</p>
+
+
+
+        <h3>&lt; <b>a href="./dirección o ruta" </b> &gt; nos crea un enlace a la dirección o ruta especificada en la etiqueta  &lt; / <b> </b> &gt;</h3> 
+
+        <h3>&lt; <b>a href="" target="_blank"</b> &gt; Se utiliza en rutas absolutas. abre la ventana en una nueva ventana, sin cerrar la actual  &lt; / <b> </b> &gt;</h3> 
+
+        <h3>&lt; <b>a href="" download </b> &gt; Se utiliza para descargar el recurso seleccionado. Solo se descargan los archivos locales  &lt; / <b> </b> &gt;</h3> 
+
+
+        <h2>Navegación dentro de la página</h2>
+        <p>Se hace a través de 'id' dentro de la etiqueta donde se quiera hacer ancla</p>
+
+        <h3>&lt; <b>a href="#Id_etiqueta" </b> &gt; Me permite navegar dentro de elementos destacados del documento &lt; / <b> </b> &gt;</h3> 
+
+        <p>Ejemplo:</p>
+        <a href="#bloque">Elementos de Bloque</a>
+
+
+      </section>
+      <br>
+
+      <section class="seccion seccion-listas">
+
+        <h2>Listas</h2>
+        <h3>Ejemplo de Lista de Definición</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HiperText markup Language: es un lenguaje de marcado que se usa para estructurar datos en una página web</dd>
+          <dt>CSS</dt>
+          <dd>Cascade Style Sheets: Hoja de estilos en cascada. Se utiliza para dar estilos al html</dd>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+
+        <h2>Ejemplo Listas Desordenadas</h2>
+        <ul>
+          <li>limones</li>
+          <li>piñas</li>
+          <li>manzanas</li>
+        </ul>
+
+
+        <h2>Ejemplo Listas Ordenadas</h2>
+        <ol>
+          <li>Bogotá</li>
+          <li>Medellín</li>
+          <li>Cali</li>
+        </ol>
+
+      </section>
+      <br>
+
+      <section class="seccion seccion-tablas">
+
+        <h2>Tablas</h2>
+        <p>Utiliza 4 etiquetas:</p>
+        <ul>
+          <li>     <h3>&lt; <b>table </b> &gt; Etiqueta que encierra la tabla  &lt; / <b> table</b> &gt;</h3> 
+          </li>
+          <li>    <h3>&lt; <b>tr </b> &gt; <i>table row</i>:  etiqueta que construye una fila  &lt; / <b> </b> &gt;</h3> 
+          </li>
+          <li>    <h3>&lt; <b> td</b> &gt; <i>table data</i>: etiqueta que construye una celda  &lt; / <b> </b> &gt;</h3> 
+          </li>
+          <li>    <h3>&lt; <b> th</b> &gt; <i></i> Se utiliza para crear las celdas de cabecera de la tabla  &lt; / <b> </b> &gt;</h3> 
+          </li>
+        </ul>
+        <p>El número de celdas dentro de un 'tr' establecerá el número de columnas de la tabla.</p>
+
+        <table class="tabla-ejemplo" border="1" cellspacing="0" width="90%">
+          <caption>Horario de Clases</caption>  <!-- esta etiqueta se usa para poner título a la tabla -->     
+          <thead>
+            <tr>
+              <th>hora</th>
+              <th>lunes</th>
+              <th>martes</th>
+              <th>miércoles</th>
+              <th>jeuves</th>
+              <th>viernes</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>08:30</td>
+              <td>matematica</td>
+              <td>ingles</td>
+              <td>sociales</td>
+              <td>dibujo</td>
+              <td rowspan="2">quimica</td>
+            </tr>
+            <tr>
+              <td>09:30</td>
+              <td>matematica</td>
+              <td>ingles</td>
+              <td>sociales</td>
+              <td>dibujo</td>
+            </tr>
+            <tr>
+              <td>10:30</td>
+              <td colspan="5">recreo</td>
+            </tr>
+            <tr>
+              <td>11:30</td>
+              <td rowspan="2">matematica</td>
+              <td>ingles</td>
+              <td>sociales</td>
+              <td>dibujo</td>
+              <td>quimica</td>
+            </tr>
+            <tr>
+              <td>12:30</td>
+              <td>ingles</td>
+              <td>sociales</td>
+              <td>dibujo</td>
+              <td>quimica</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">Total de Asignaturas</td>
+              <td>12</td>
+            </tr>
+          </tfoot>
+
+        </table>
+
+
+
+            <pre>
+              <code>
+                <main></main>
+              </code>
+            </pre>
+
+
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+            
+      </main>
+        
+      <aside class="aside-index">
+            <h2>Mas información sobre html</h2>
+
+            <div class="contenedor-aside">
+
+              <dl>
+
+                <div>
+                  <dt><a class="link-aside" href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer">HTML Living Standard</a></dt>
+                  <dd>El sitio MDN Web Docs proporciona informaciÃ³n sobre tecnologías web abiertas, incluidos HTML, CSS y API para sitios web y aplicaciones web progresivas.</dd>
+
+                </div>
+                <div>
+                  
+                  <dt><a class="link-aside" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">Guía Flex Box Layout</a></dt>
+                  <dd>Esta guía completa explica todo sobre flexbox, centrándose en las diferentes propiedades posibles para el elemento padre (el contenedor flexible) y los elementos hijos (los elementos flexibles). </dd>
+                </div>
+                <div>
+
+                  <dt><a class="link-aside" href="https://devdocs.io/" target="_blank" rel="noopener noreferrer">Devdocs.io</a></dt>
+                  <dd>DevDocs.io es una herramienta en línea, una especie de "navaja suiza de la documentación", que reúne en un solo lugar la documentación de diversos lenguajes de programación, frameworks, bibliotecas y otras tecnologías web para desarrolladores.</dd>
+                </div>
+                <div>
+
+                  <dt><a class="link-aside" href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">Valida tu código HTML</a></dt>
+                  <dd>El W3C, o Consorcio de la World Wide Web, es una organización internacional que desarrolla estándares web para asegurar la interoperabilidad y el crecimiento de la web a largo plazo. </dd>
+                </div>
+                <div>
+
+                  <dt><a class="link-aside" href="https://developer.mozilla.org/en-US/docs/Web" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></dt>
+                  <dd>MDN Web Docs es una plataforma de documentación y aprendizaje para desarrolladores web, donde se puede encontrar información detallada sobre estándares web abiertos, tecnologías de Mozilla y otros temas relacionados.</dd>
+                </div>
+                
+
+
+
+              </dl>
+              
+
+              
+              
+              
+              
+              <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+
+            </div>
+
+      </aside>
+
+    </div>
+      
+      
+    <footer>
+          <p>&copy; 2025 lasaro069@gmail.com - Todos los derechos reservados.</p>
+    </footer>
   </body>
+
+</html>
+
+
+
+
+
+
 
 </html>

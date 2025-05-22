@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+}
+
+.body-index {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-index {
+
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contenedor-imagen {
+    padding-top: 10px;
+}
+
+.imagen-titulo {
+    width: 100px;
+    
+}
+
+.contenedor-titulo-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor-titulo {
+    color: aliceblue;
+    margin: 0 auto 10px auto;
+    padding: 10px;
+}
+
+.contenedor-nav {
+}
+
+.lista-nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.item-lista-nav {
+    background-color: orangered;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.link-item-nav {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.contenedor-main-aside {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-index {
+    background-color: antiquewhite;
+    width: 70%;
+    padding-left: 10px;
+}
+
+
+
+
+.aside-index {
+    background-color: lightblue;
+    width: 30%;
+
+}
+
+.contenedor-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.link-aside {
+    color: black;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+}
+
+dd {
+    margin-top: 5px;
+}
+
+h2, h3 {
+    margin-top: 10px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    font-style: italic;
+}
+
+.seccion {
+    background-color: beige;
+    border-radius: 20px;
+}
+
+.tabla-ejemplo {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
