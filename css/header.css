@@ -15,6 +15,9 @@
 .header-index {
 
     background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
     display: flex;
     flex-direction: row;
 
@@ -71,7 +74,7 @@
 }
 
 .main-index {
-    background-color: antiquewhite;
+    background-color: rgb(27, 26, 25);
     width: 70%;
     padding-left: 10px;
 }
@@ -125,6 +128,25 @@ dd {
 .tabla-ejemplo {
     margin: 10px;
     padding: 10px;
+}
+
+.aside-index {
+    position: fixed;
+    right: 0;
+    top: 120px;
+    height: 620px;
+    overflow-y: auto;
+}
+
+.titulo-aside {
+    text-align: center;
+}
+
+.contenedor-aside {
+    background-color: rgb(174, 201, 228);
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px gray;
 }
 
 
